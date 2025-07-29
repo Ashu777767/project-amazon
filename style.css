@@ -221,3 +221,94 @@ ul {
 .pages a {
   margin-left: 20px;
 }
+/* media QUERIES */
+@media (max-width: 1024px) {
+  .nav-search {
+    width: 400px;
+  }
+
+  .panel-ops {
+    width: 100%;
+    font-size: 0.75rem;
+  }
+
+  .box {
+    width: 45%; /* Show 2 boxes per row */
+  }
+}
+
+/* For phones and smaller tablets */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px;
+  }
+
+  .nav-search {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .panel {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px;
+  }
+
+  .panel-ops {
+    width: 100%;
+    flex-wrap: wrap;
+    font-size: 0.75rem;
+  }
+
+  .shop-section {
+    justify-content: center;
+  }
+
+  .box {
+    width: 90%; /* One per row */
+  }
+
+  .hero-message {
+    font-size: 0.75rem;
+    width: 95%;
+    text-align: center;
+  }
+}
+
+/* For very small phones */
+@media (max-width: 480px) {
+  .nav-search {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .select-icon,
+  .search-input,
+  .search-icon {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .foot-panel2 {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .foot-panel2 ul {
+    margin-bottom: 20px;
+  }
+
+  .pages a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .hero-message {
+    font-size: 0.65rem;
+  }
+}
